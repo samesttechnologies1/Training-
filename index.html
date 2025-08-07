@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SamestTechnologies</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Top Navigation -->
-  <nav class="top-nav">
+  <nav class="top-nav" aria-label="Main navigation">
     <div class="nav-container">
-      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-      <ul id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-controls="nav-links"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >☰</button>
+
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="about.html">About</a></li>
+        <li role="none"><a role="menuitem" href="courses.html">Courses</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Services</a></li>
+        <li role="none"><a role="menuitem" href="projects.html">Projects</a></li>
+        <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -27,43 +34,64 @@
   <!-- Logo + Title -->
   <header>
     <div class="brand">
-      <a href="index.html" class="logo">
-        <img src="logo.jpg" alt="Samest Technologies Logo">
+      <a href="index.html" class="logo" aria-label="SamestTechnologies home">
+        <img src="logo.jpg" alt="Samest Technologies Logo" id="site-logo">
       </a>
       <h1>SamestTechnologies</h1>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Learn Future-Ready Skills Today</h2>
-    <p>Master AI, Programming, Design, and more with expert-led training.</p>
-    <a class="btn" href="courses.html">View Courses</a>
-  </section>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <h2>Learn Future-Ready Skills Today</h2>
+      <p>Master AI, Programming, Design, and more with expert-led training.</p>
+      <a class="btn" href="courses.html">View Courses</a>
+    </section>
 
-  <!-- Highlights -->
-  <section class="highlights">
-    <h2>Why Choose SamestTechnologies?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Expert Tutors</h3>
-        <p>Experienced trainers guiding you every step of the way.</p>
+    <!-- Highlights -->
+    <section class="highlights">
+      <h2>Why Choose SamestTechnologies?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Expert Tutors</h3>
+          <p>Experienced trainers guiding you every step of the way.</p>
+        </div>
+        <div class="feature">
+          <h3>Hands-on Projects</h3>
+          <p>Work on real-world tasks to build confidence and experience.</p>
+        </div>
+        <div class="feature">
+          <h3>Affordable Pricing</h3>
+          <p>High-quality education at reasonable prices.</p>
+        </div>
       </div>
-      <div class="feature">
-        <h3>Hands-on Projects</h3>
-        <p>Work on real-world tasks to build confidence and experience.</p>
-      </div>
-      <div class="feature">
-        <h3>Affordable Pricing</h3>
-        <p>High-quality education at reasonable prices.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 SamestTechnologies. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Small inline script to toggle mobile menu -->
+  <script>
+    (function () {
+      const btn = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav-links');
+
+      btn.addEventListener('click', function () {
+        const isOpen = nav.classList.toggle('open'); // toggles show/hide
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      // Optional: close menu when a link is clicked (mobile)
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A' && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
