@@ -68,6 +68,8 @@ footer {
     vertical-align: middle;
 }
 
+
+
 header {
     display: flex;
     align-items: center;
@@ -77,4 +79,120 @@ header {
 header nav ul {
     display: flex;
     gap: 15px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f1;
+  color: #333;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: #ff6f61;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.top-nav ul li {
+  margin: 0.5rem 1rem;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Logo + Title Section */
+header {
+  background-color: #ff9478;
+  padding: 1rem;
+  text-align: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  color: #333;
+}
+
+.btn {
+  background: #ff6f61;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Highlights */
+.highlights, .features {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 200px;
+  margin: 1rem;
+  background: #ffe0b2;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ff9478;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .brand {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
