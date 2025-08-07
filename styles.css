@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f1;
+  color: #333;
+}
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  background-color: #ff9478;
+  margin: 0;
+}
+nav ul li {
+  margin: 0.5rem 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  color: #333;
+}
+.btn {
+  background: #ff6f61;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.highlights, .features, .course-list, .services-list {
+  padding: 2rem;
+  text-align: center;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.feature {
+  flex: 1 1 200px;
+  margin: 1rem;
+  background: #ffe0b2;
+  padding: 1rem;
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ff9478;
+  color: white;
+}
+.logo img {
+    height: 50px; /* adjust as needed */
+    width: auto;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
