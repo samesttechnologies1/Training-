@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>Student Projects</h1></header>
+  <main>
+    <p>We showcase capstone and real-world projects developed by our trainees, including web applications, AI models, data dashboards, and mobile apps.</p>
+    <p>Below are some of our powerful projects</p>
+    
+    <h2>Park Visitors Count Prediction</h2>
+
+    <p><strong>Skills:</strong> Python, Machine Learning, Flask, cURL, Power BI, SQLite</p>  
+
+    <h3>Project Overview</h3>
+    <p>The goal of this project was to develop a machine learning model capable of accurately predicting the number of visitors to various parks based on historical and environmental data. This solution helps park administrators optimize operations, staffing, and resource allocation by forecasting visitor trends.</p>  
+
+    <h3>Methodology</h3>
+    <ul>
+      <li><strong>Data Collection & Preprocessing</strong>
+        <ul>
+          <li>Gathered visitor data with features such as park location, weather conditions, day of the week, and holiday status.</li>  
+          <li>Conducted Exploratory Data Analysis (EDA) to identify missing values, outliers, and key trends.</li>  
+          <li>Performed correlation analysis to determine influential factors affecting visitor counts.</li>  
+        </ul>
+      </li>
+
+      <li><strong>Feature Engineering</strong>
+        <ul>
+          <li>Engineered new features, including moving averages, to capture trends over time.</li>  
+          <li>Applied Label Encoding to convert categorical variables (e.g., day of the week) into numerical form.</li>  
+          <li>Normalized data using Standard Scaler to ensure consistent model performance.</li>
+        </ul>
+      </li>
+
+      <li><strong>Model Selection & Training</strong>
+        <ul>
+          <li>Split data into 80% training and 20% testing sets.</li>  
+          <li>Evaluated multiple algorithms:
+            <ul>
+              <li>Linear Regression (LR)</li>
+              <li>Support Vector Regression (SVR)</li>
+              <li>Random Forest (RF)</li>
+              <li>Time Series Forecasting (using statsmodels)</li>  
+            </ul>
+          </li>
+          <li>Optimized hyperparameters using Grid Search for best performance.</li>  
+        </ul>
+      </li>
+
+      <li><strong>Model Evaluation</strong>
+        <ul>
+          <li>Assessed models using:
+            <ul>
+              <li>RMSE (Root Mean Squared Error) - Measures prediction accuracy.</li>  
+              <li>R² Score – Evaluates how well the model explains data variance.</li>  
+            </ul>
+          </li>
+          <li>Random Forest (RF) outperformed other models, delivering the lowest RMSE and highest R² score.</li>  
+        </ul>
+      </li>
+
+      <li><strong>Deployment & Testing</strong>
+        <ul>
+          <li>Deployed the Random Forest model as a Flask API for real-time predictions.</li>  
+          <li>Integrated an SQLite database to store predictions and input data.</li>  
+          <li>Tested API functionality using cURL in a Linux environment.</li>  
+          <li>Visualized insights using Power BI for stakeholder reporting.</li>  
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Key Results</h3>
+    <ul>
+      <li>✅ <strong>High Accuracy:</strong> Random Forest achieved the best predictive performance.</li>  
+      <li>✅ <strong>Scalable Solution:</strong> Flask API allows easy integration with park management systems.</li>  
+      <li>✅ <strong>Data-Driven Decisions:</strong> Enables better resource planning based on forecasted visitor trends.</li>  
+    </ul>
+
+    <p>This project demonstrates the power of machine learning in operational forecasting, providing actionable insights for park management.</p>
+    
+  </main>
+  <footer><p>&copy; 2025 SamestTechnologies</p></footer>
+</body>
+</html>
