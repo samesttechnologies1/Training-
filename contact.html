@@ -1,19 +1,100 @@
-main<mainiaOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Added some basic styling to create space */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    
+    .contact-map {
+      flex: 1;
+      min-width: 300px;
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>Contact SamestTechnologies</h1></header>
+  <nav class="top-nav">
+    <div class="nav-container">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="brand">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Samest Technologies Logo">
+      </a>
+      <h1>Contact Us</h1>
+    </div>
+  </header>
+
   <main>
-    <p>Email: samesttechnologies@gmail.com </p>
-    <p>Phone: +234 911 652 5403</p>
-    <p>WhatsApp: +234 911 652 5403</p>
-    <p>Address: Shop 23, Ojuowo Shopping Complex, No. 1, Magbon Obele, Badagry Expressway, Lagos, Nigeria</p>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> samesttechnologies@gmail.com</p>
+        <p><strong>Phone:</strong> +234 911 652 5403</p>
+        <p><strong>WhatsApp:</strong> +234 911 652 5403</p>
+        <p><strong>Address:</strong> Shop 23, Ojuowo Shopping Complex, No. 1, Magbon Obele, Badagry Expressway, Lagos, Nigeria</p>
+      </div>
+      
+      <div class="contact-map">
+        <h2>Our Location</h2>
+        <!-- You can add a Google Maps embed here -->
+        <div style="height: 300px; background: #eee; display: flex; align-items: center; justify-content: center;">
+          <img src="Images/map.jpg" alt="Samest Technologies Logo" id="site-logo">
+        </div>
+      </div>
+    </div>
+    
+  
   </main>
-  <footer><p>&copy; 2025 SamestTechnologies</p></footer>
+  
+  <footer>
+    <p>&copy; 2025 SamestTechnologies</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
