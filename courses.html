@@ -3,8 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Courses</title>
+  <title>Courses - SamestTechnologies</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Additional styling for this page */
+    .course-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .course-list li {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .course-list li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .course-list a {
+      display: block;
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    
+    .course-list a:hover {
+      color: #3498db;
+    }
+    
+    .course-duration {
+      display: block;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+    
+    .contact-info {
+      background: #e8f4fc;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 30px 0;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .course-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Top Navigation -->
@@ -43,20 +99,72 @@
 
   <main>
     <ul class="course-list">
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Artificial Intelligence – (12 Weeks)"></a> </li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Python Programming –  (8 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Computer Basics –  (2 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Website Design –  (4 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Graphics Design – (4 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Data Analysis – (12 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Microsoft Office – (12 Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Mobile App Development – (12  Weeks)"></a></li>
-      <li><a href= "https://wa.me/2349116525403" aria-label= "Machine Learning – (12 Weeks)"></a></li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Artificial Intelligence course">
+          Artificial Intelligence
+          <span class="course-duration">12 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Python Programming course">
+          Python Programming
+          <span class="course-duration">8 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Computer Basics course">
+          Computer Basics
+          <span class="course-duration">2 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Website Design course">
+          Website Design
+          <span class="course-duration">4 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Graphics Design course">
+          Graphics Design
+          <span class="course-duration">4 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Data Analysis course">
+          Data Analysis
+          <span class="course-duration">12 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Microsoft Office course">
+          Microsoft Office
+          <span class="course-duration">12 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Mobile App Development course">
+          Mobile App Development
+          <span class="course-duration">12 Weeks</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/2349116525403" aria-label="Machine Learning course">
+          Machine Learning
+          <span class="course-duration">12 Weeks</span>
+        </a>
+      </li>
     </ul>
-    <p>We offer both online and offline training at your own convenience. For more information, contact us on <strong>WhatsApp on +2349116525403</strong></p>
-   
+    
+    <div class="contact-info">
+      <p>We offer both online and offline training at your own convenience.</p>
+      <p>For more information, contact us on <strong>WhatsApp: +2349116525403</strong></p>
+    </div>
   </main>
-  <footer><p>&copy; 2025 SamestTechnologies</p></footer>
+  
+  <footer>
+    <p>&copy; 2025 SamestTechnologies</p>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>

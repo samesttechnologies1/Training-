@@ -3,8 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us</title>
+  <title>About Us - SamestTechnologies</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Additional inline styles for this page */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 40px 0;
+      align-items: center;
+    }
+    
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .highlight-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #2c3e50;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+    
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Top Navigation -->
@@ -41,11 +97,29 @@
   </header>
   
   <main>
-    <p>We are dedicated to empowering learners through hands-on digital skills training across the world. Our mission is to make advanced technologies and professional computer skills accessible to all.</p>
-    
-
+    <div class="about-content">
+      <div class="about-text">
+        <p>We are dedicated to empowering learners through hands-on digital skills training across the world. Our mission is to make advanced technologies and professional computer skills accessible to all.</p>
+        <div class="about-image">
+        <img src="Images/about1.jpg" alt="Students learning at SamestTechnologies" loading="lazy">
+      </div>
+        
+        <div class="highlight-box">
+        
+          <p>What makes our teaching unique is the ability to teach students our courses and practicalize all they have learnt using mobile device based tools. So even without a laptop, our students can develop AI based apps, analyze data and lots more with just a mobile phone. Learning on the go!</p>
+        </div>
+        
+        <p>We also offer quality services in Data Cleaning and Analysis, Machine Learning, Data Presentation and lots more. Our approach combines theoretical knowledge with practical applications to ensure our students and clients gain real-world skills.</p>
+      </div>
+      
+      
+    </div>
   </main>
-  <footer><p>&copy; 2025 SamestTechnologies</p></footer>
+  
+  <footer>
+    <p>&copy; 2025 SamestTechnologies. All rights reserved.</p>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
