@@ -9,6 +9,19 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* -------------------------
@@ -87,6 +100,15 @@ header {
   display: block;
 }
 
+.contact-map {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* site title */
 h1 {
   margin: 0;
@@ -142,6 +164,7 @@ footer {
   padding: 1rem;
   background: #ff9478;
   color: white;
+  margin-top: auto;
 }
 
 /* -------------------------
@@ -192,6 +215,21 @@ footer {
   }
 
   h1 { font-size: 1.4rem; }
+  
+  .map-container {
+    height: 250px;
+  }
+}
+
+/* Map container styles */
+.map-container {
+  height: 300px;
+  width: 100%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* Desktop larger screen polish */
@@ -199,4 +237,3 @@ footer {
   .nav-container { padding: 0.6rem 1rem; }
   .nav-links a:hover { opacity: 0.95; }
 }
-
