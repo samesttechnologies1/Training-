@@ -7,29 +7,39 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="top-nav">
-  <div class="nav-container">
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-    <ul id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Top Navigation -->
+  <nav class="top-nav" aria-label="Main navigation">
+    <div class="nav-container">
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-controls="nav-links"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >☰</button>
 
-<header>
-  <div class="brand">
-    <a href="index.html" class="logo">
-      <img src="Images/logo.jpg" alt="Samest Technologies Logo">
-    </a>
-    <h1>Our Courses</h1>
-  </div>
-</header>
+      <ul id="nav-links" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="about.html">About</a></li>
+        <li role="none"><a role="menuitem" href="courses.html">Courses</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Services</a></li>
+        <li role="none"><a role="menuitem" href="projects.html">Projects</a></li>
+        <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Logo + Title -->
+  <header>
+    <div class="brand">
+      <a href="index.html" class="logo" aria-label="SamestTechnologies home">
+        <img src="Images/logo.jpg" alt="Samest Technologies Logo" id="site-logo">
+      </a>
+      <h1>Our Courses</h1>
+    </div>
+  </header>
+  
 
   <main>
     <ul class="course-list">
